@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: binance-eda
+Version: 0.1
+Summary: Experiments in Python algo trading
+Home-page: UNKNOWN
+Author: Rizwan Moidunni
+Author-email: riz1000@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+

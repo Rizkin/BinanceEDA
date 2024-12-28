@@ -1,0 +1,44 @@
+Planned:
+binance-algo-bot/
+├── config/
+│   └── settings.py         # Configuration file for API keys, URLs, etc.
+├── connections/
+│   ├── client.py           # Binance API client setup
+│   ├── websocket.py        # WebSocket connections
+│   └── rest.py             # REST API methods
+├── data/
+│   ├── fetch.py            # Fetch and store live data
+│   ├── preprocess.py       # Data cleaning and preparation
+│   ├── analysis.py         # Data analysis and indicators
+├── strategies/
+│   ├── base_strategy.py    # Abstract class for strategy implementation
+│   ├── simple_strategy.py  # Example: Moving Average Crossover
+│   ├── advanced_strategy.py # Example: RSI + Bollinger Bands
+├── trading/
+│   ├── order_manager.py    # Handle buy/sell/cancel orders
+│   ├── portfolio.py        # Portfolio management and P&L tracking
+│   └── risk_manager.py     # Risk management logic
+├── utils/
+│   ├── logger.py           # Logging functionality
+│   ├── helpers.py          # Common helper functions
+│   └── scheduler.py        # Task scheduling (if required)
+├── main.py                 # Entry point of the bot
+└── README.md               # Documentation
+
+Currently: 
+binance-algo-bot/  # Root directory
+├── config/
+│   ├── __init__.py
+│   └── settings.py
+├── connections/
+│   ├── __init__.py
+│   └── client.py
+├── strategies/
+│   ├── __init__.py
+│   └── simple_strategy.py
+├── trading/
+│   ├── __init__.py
+│   └── order_manager.py
+├── main.py
+├── setup.py
+└── README.md
