@@ -1,1 +1,2 @@
 Hello, Binance!
+SSH setup confirmed!
