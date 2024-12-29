@@ -1,5 +1,5 @@
 Planned:
-binance-algo-bot/
+BinanceEDA/
 ├── config/
 │   └── settings.py         # Configuration file for API keys, URLs, etc.
 ├── connections/
@@ -26,7 +26,7 @@ binance-algo-bot/
 └── README.md               # Documentation
 
 Currently: 
-binance-algo-bot/  # Root directory
+BinanceEDA/  # Root directory
 ├── config/
 │   ├── __init__.py
 │   └── settings.py
