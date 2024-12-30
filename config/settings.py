@@ -34,7 +34,7 @@ DATA_DIR = "data/"  # Directory for storing fetched data
 HISTORICAL_DATA_FILE = f"{DATA_DIR}historical_data_{TRADING_PAIR}.csv"
 
 # Environment
-USE_TESTNET = True  # Switch between Binance Testnet and Live environment
+USE_TESTNET = False  # Switch between Binance Testnet and Live environment
 
 if USE_TESTNET:
     BINANCE_BASE_URL = "https://testnet.binance.vision/api"

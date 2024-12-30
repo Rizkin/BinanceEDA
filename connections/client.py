@@ -28,9 +28,7 @@ class BinanceClient:
     # General Endpoints
     # ---------------------------
     def test_connection(self):
-        """
-        Test the connection to the Binance API.
-        """
+        """Test the connection to the Binance API."""
         try:
             status = self.client.ping()
             print("Connection successful:", status)
@@ -40,9 +38,7 @@ class BinanceClient:
             raise
 
     def get_server_time(self):
-        """
-        Get the server time from Binance.
-        """
+        """Get the server time from Binance."""
         try:
             server_time = self.client.get_server_time()
             return server_time
@@ -65,9 +61,24 @@ class BinanceClient:
             print(f"Error fetching ticker for {symbol}:", e)
             raise
 
+    def get_historical_klines(self, symbol, interval, start_str, end_str=None):
+        """
+        Fetch historical candlestick data using the official `get_historical_klines` method.
+        :param symbol: Trading pair (e.g., 'BTCUSDT').
+        :param interval: Candlestick interval (e.g., '1m', '5m', '1h').
+        :param start_str: Start date/time as a string (e.g., '1 Dec, 2023').
+        :param end_str: End date/time as a string (optional, e.g., '5 Dec, 2023').
+        """
+        try:
+            klines = self.client.get_historical_klines(symbol, interval, start_str, end_str)
+            return klines
+        except Exception as e:
+            print(f"Error fetching historical klines for {symbol}:", e)
+            raise
+
     def get_klines(self, symbol, interval, limit=100):
         """
-        Get historical candlestick data.
+        Get recent candlestick data.
         :param symbol: Trading pair (e.g., 'BTCUSDT').
         :param interval: Candlestick interval (e.g., '1m', '5m', '1h').
         :param limit: Number of data points to retrieve (default: 100).
@@ -83,9 +94,7 @@ class BinanceClient:
     # Account and Trade Endpoints
     # ---------------------------
     def get_account_balance(self):
-        """
-        Fetch the account balance for all assets.
-        """
+        """Fetch the account balance for all assets."""
         try:
             account_info = self.client.get_account()
             balances = account_info['balances']
