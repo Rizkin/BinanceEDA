@@ -4,6 +4,10 @@ import os
 BINANCE_API_KEY = os.getenv("BINANCE_API_KEY", "your-api-key-here")
 BINANCE_SECRET_KEY = os.getenv("BINANCE_SECRET_KEY", "your-secret-key-here")
 
+#Samco API configs
+SAMCO_USER_ID = os.getenv("SAMCO_USER_ID")
+SAMCO_PASSWORD = os.getenv("SAMCO_PASSWORD")
+
 # Base URLs
 BINANCE_BASE_URL = "https://api.binance.com"  # For REST API
 BINANCE_WS_URL = "wss://stream.binance.com:9443/ws"  # For WebSocket
